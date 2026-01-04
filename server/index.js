@@ -23,10 +23,6 @@ io.on('connection', (socket) => {
 });
 
 
-// Integrasi WhatsApp
-const startWhatsApp = require('./whatsapp');
-startWhatsApp(io);
-
 const PORT = 3000;
 server.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
